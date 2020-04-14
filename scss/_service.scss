@@ -1,0 +1,49 @@
+.service-icon-bg-1 {
+  background-image: url(../img/servicios/service_icon_bg_1.png);
+}
+.service-area {
+  padding-top: 240px;
+  padding-bottom: 105px;
+  @media #{$mobile_device} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media #{$tablet_device} {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .single-service {
+    padding: 70px 25px 65px 25px;
+    border: 1px solid $border_color;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    .service-thumb {
+      height: 140px;
+      width: 160px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
+      .service-icon {
+        img {
+          width: auto;
+        }
+      }
+    }
+    .service-content {
+      h3 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 43px;
+        margin-bottom: 22px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &:hover {
+      box-shadow: (0px 16px 35px 0px rgba(0, 0, 2, 0.08));
+      border: 1px solid transparent;
+    }
+  }
+}

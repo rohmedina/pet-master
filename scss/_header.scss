@@ -1,0 +1,191 @@
+.header-area {
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  @media #{$mobile_device} {
+    padding-top: 0;
+  }
+  @media #{$tablet_device} {
+    padding-top: 0;
+  }
+  .header-top-area {
+    padding: 20px 0;
+    background: $theme-color2;
+    .social-media-links {
+      text-align: right;
+      @media #{$mobile_device} {
+        text-align: center;
+      }
+      a {
+        font-size: 15px;
+        color: $sidebar_bg;
+        margin-left: 32px;
+        &:hover {
+          color: $btn_bg;
+        }
+      }
+    }
+    .short-contact-list {
+      text-align: left;
+      @media #{$mobile_device} {
+        text-align: center;
+      }
+      ul {
+        li {
+          display: inline-block;
+          a {
+            font-size: 16px;
+            color: $white_color;
+            font-family: $font1;
+            font-weight: 400;
+            margin-right: 50px;
+            text-decoration: none;
+            @media #{$mobile_device} {
+              margin-left: 0;
+              margin-right: 5px;
+              font-size: 14px;
+              margin-bottom: 10px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  // header area
+  .main-header-area {
+    background: $white_color;
+    @media #{$mobile_device} {
+      padding: 10px 10px;
+    }
+    @media #{$tablet_device} {
+      padding: 10px 10px;
+    }
+    .logo h1 {
+      text-align: center;
+      color: $heading-color;
+      font-size: 25px;
+      text-transform: capitalize;
+      font-weight: 500;
+      display: inline-block;
+      padding: 10px 0;
+      font-family: $font1;
+      position: relative;
+      text-transform: capitalize;
+      @media #{$mobile_device} {
+        text-align: left;
+      }
+      @media #{$tablet_device} {
+        text-align: left;
+      }
+      @media #{$mid_device} {
+        text-align: left;
+      }
+      // img{
+      //     @media #{$mobile_device} {
+
+      //         width: 70px;
+      //     }
+      //     @media #{$tablet_device} {
+
+      //         width: 70px;
+      //     }
+
+      // }
+    }
+    .main-menu {
+      text-align: right;
+      ul {
+        li {
+          display: inline-block;
+          position: relative;
+          margin-left: 40px;
+          a {
+            color: $heading-color;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 500;
+            display: inline-block;
+            padding: 37px 0;
+            font-family: $font1;
+            position: relative;
+            text-transform: capitalize;
+            text-decoration: none;
+            @media #{$mid_device} {
+              font-size: 15px;
+            }
+            @media #{$large_device} {
+              font-size: 15px;
+            }
+            i {
+              font-size: 9px;
+              @media #{$mobile_device} {
+                display: none !important;
+              }
+              @media #{$tablet_device} {
+                display: none !important;
+              }
+            }
+            &::before {
+              position: absolute;
+              content: "";
+              background: $white_color;
+              width: 100%;
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              transform: scaleX(0);
+              transition: 0.3s;
+            }
+            &:hover::before {
+              opacity: 1;
+              transform: scaleX(1);
+            }
+            &.active {
+              &::before {
+                opacity: 1;
+                transform: scaleX(1);
+              }
+            }
+          }
+          &:hover > a {
+            color: $btn-bg !important;
+          }
+        }
+      }
+    }
+    &.sticky {
+      box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: -70px;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      transform: translateY(70px);
+      transition: transform 500ms ease, background 500ms ease;
+      -webkit-transition: transform 500ms ease, background 500ms ease;
+      box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+      // padding: 10px 150px;
+      background: rgba(255, 255, 255, 0.96);
+      @media #{$mobile_device} {
+        padding: 10px 10px;
+      }
+      @media #{$tablet_device} {
+        padding: 10px 10px;
+      }
+      @media #{$mid_device} {
+        padding: 10px 20px;
+      }
+      @media #{$large_device} {
+        padding: 10px 20px;
+      }
+      .main-menu {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.boxed-btn {
+  background: $white_color;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  color: $theme-color4;
+  padding: 17px 50px;
+  font-family: $font1;
+  display: inline-block;
+  border-radius: 30px;
+  &:hover {
+    background: $btn_hover;
+    color: $white_color;
+    border: 1px solid $btn_hover;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.boxed-btn2 {
+  background: $btn_bg;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  color: $white_color;
+  padding: 17px 50px;
+  font-family: $font1;
+  display: inline-block;
+  border-radius: 30px;
+  &:hover {
+    background: $btn_hover;
+    color: $white_color;
+    border: 1px solid $btn_hover;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.boxed-btn3 {
+  background: $white_color;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  color: $theme-color4;
+  padding: 17px 50px;
+  font-family: $font1;
+  display: inline-block;
+  border-radius: 30px;
+  &:hover {
+    background: $btn_hover;
+    color: $white_color;
+    border: 1px solid $btn_hover;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}

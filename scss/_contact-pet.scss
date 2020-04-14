@@ -1,0 +1,54 @@
+.pet-bg-1 {
+  background-image: url(../img/banner/contact_bg.png);
+}
+
+.contact-pet {
+  margin-top: 5vh;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 160px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @media #{$mobile_device} {
+    background-size: cover;
+    padding: 110px 0;
+  }
+  .contact-text {
+    .section-title {
+      h3 {
+        color: $white_color;
+      }
+      p {
+        font-size: 25px;
+        color: $white_color;
+        line-height: 40px;
+        margin-top: 35px;
+        margin-bottom: 50px;
+      }
+    }
+    .contact-btn {
+      @media #{$mobile_device} {
+        display: block !important;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $font1;
+        color: $white_color;
+        margin-left: 20px;
+        @media #{$mobile_device} {
+          margin-left: 0;
+          margin-top: 30px;
+        }
+        a {
+          font-weight: 600;
+          color: $white_color;
+          margin-left: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
