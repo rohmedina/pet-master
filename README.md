@@ -1,4 +1,4 @@
-# pet-master
+# PET MASTER
 PET-Master se utilizó HTML, SASS, CSS, JavaScript, Bootstrap, Jquery.
 - Link del proyecto https://rohmedina.github.io/pet-master/
 
