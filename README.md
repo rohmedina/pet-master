@@ -2,4 +2,4 @@
 PET-Master se utilizó HTML, SASS, CSS, JavaScript, Bootstrap, Jquery.
 - Link del proyecto https://rohmedina.github.io/pet-master/
 
-![rodrigo_medina](https://repository-images.githubusercontent.com/255504777/ba8d5680-9479-11ea-9468-0997a27bfc66)
+![rodrigo_medina](https://repository-images.githubusercontent.com/255504777/3ab3bc00-947a-11ea-9da4-80e136b4bc76)
